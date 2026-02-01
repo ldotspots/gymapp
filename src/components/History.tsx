@@ -17,7 +17,11 @@ export default function History({ workouts, loading }: HistoryProps) {
   if (workouts.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-background p-4">
-        <div className="text-6xl mb-4">💪</div>
+        <svg className="w-16 h-16 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <rect x="1" y="8" width="3" height="8" rx="1" fill="currentColor" />
+          <rect x="20" y="8" width="3" height="8" rx="1" fill="currentColor" />
+          <rect x="7" y="6" width="10" height="2" rx="1" fill="currentColor" />
+        </svg>
         <h2 className="text-xl font-bold mb-2">No workouts yet</h2>
         <p className="text-text-secondary text-center">
           Start your first workout to see it here

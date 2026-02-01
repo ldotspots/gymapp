@@ -26,7 +26,11 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
-      <div className="animate-pulse text-6xl">💪</div>
+      <svg className="w-16 h-16 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="1" y="8" width="3" height="8" rx="1" fill="currentColor" />
+        <rect x="20" y="8" width="3" height="8" rx="1" fill="currentColor" />
+        <rect x="7" y="6" width="10" height="2" rx="1" fill="currentColor" />
+      </svg>
     </div>
   );
 }
